@@ -11,7 +11,7 @@ class Program
         int guess = int.Parse(Console.ReadLine());
         int attempts = 1;
 
-        while (guess != number && attempts < 5)
+        while (guess != number)
         {
             if (guess < number)
             {
@@ -22,15 +22,11 @@ class Program
                 Console.WriteLine("Too high! Try again.");
             }
             guess = int.Parse(Console.ReadLine());
-            attempts++;
         }
-        if (guess == number && attempts <= 5)
+        if (guess == number)
         {
-            Console.WriteLine($"Congratulations! You guessed the number, it took {attempts} attempts!");
+            Console.WriteLine("Congratulations! You guessed the number!");
         }
-        if (attempts == 5 && guess != number)
-        {
-            Console.WriteLine($"Sorry, you've used all your attempts. The number was {number}.");
-        }
+        
     }
 }

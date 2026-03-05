@@ -8,10 +8,8 @@ class Program
         Random randomNumber = new Random();
         int number = randomNumber.Next(1, 101);
         Console.WriteLine("I'm thinking of a number between 1 and 100. Can you guess what it is?");
-        int guess = int.Parse(Console.ReadLine());
-        int attempts = 1;
-
-        while (guess != number && attempts < 5)
+        int guess = Console.ReadLine();
+        while (guess != number)
         {
             if (guess < number)
             {
@@ -21,16 +19,9 @@ class Program
             {
                 Console.WriteLine("Too high! Try again.");
             }
-            guess = int.Parse(Console.ReadLine());
-            attempts++;
+            guess = Console.ReadLine();
         }
-        if (guess == number && attempts <= 5)
-        {
-            Console.WriteLine($"Congratulations! You guessed the number, it took {attempts} attempts!");
-        }
-        if (attempts == 5 && guess != number)
-        {
-            Console.WriteLine($"Sorry, you've used all your attempts. The number was {number}.");
-        }
+        if
+        
     }
 }

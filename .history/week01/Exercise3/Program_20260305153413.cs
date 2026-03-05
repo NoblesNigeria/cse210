@@ -22,7 +22,6 @@ class Program
                 Console.WriteLine("Too high! Try again.");
             }
             guess = int.Parse(Console.ReadLine());
-            attempts++;
         }
         if (guess == number && attempts <= 5)
         {

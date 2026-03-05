@@ -9,7 +9,7 @@ class Program
         int number = randomNumber.Next(1, 101);
         Console.WriteLine("I'm thinking of a number between 1 and 100. Can you guess what it is?");
         int guess = int.Parse(Console.ReadLine());
-        int attempts = 1;
+        attempts++;
 
         while (guess != number && attempts < 5)
         {
@@ -22,9 +22,8 @@ class Program
                 Console.WriteLine("Too high! Try again.");
             }
             guess = int.Parse(Console.ReadLine());
-            attempts++;
         }
-        if (guess == number && attempts <= 5)
+        if (guess == number)
         {
             Console.WriteLine($"Congratulations! You guessed the number, it took {attempts} attempts!");
         }

@@ -35,12 +35,5 @@ class Program
             score = Console.ReadLine();
         }
         if (gradeScore >= 70)
-        {
-            Console.WriteLine("Congratulations! You passed the course.");
-        }
-        else
-        {
-            Console.WriteLine("Sorry, you did not pass the course. Better luck next time!");
-        }
     }
 }
