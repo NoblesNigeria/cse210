@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args, int numbers)
     {
         Console.WriteLine("Hello World! This is the Exercise5 Project.");
-        string result = DisplayWelcome("Welcome to the Exercise5 Project!");
+        string resultDisplayWelcome("");
         Console.WriteLine(result);
         string userName = PromptUserName("");
         Console.WriteLine($"Hello, {userName}! Nice to meet you.");
