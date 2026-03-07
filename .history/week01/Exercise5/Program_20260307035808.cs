@@ -1,11 +1,10 @@
 using System;
 
-class Program
+internal class NewBas
+
+
+class Program;
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World! This is the Exercise5 Project.");
-    }
     static string DisplayWelcome(string message)
     {
         Console.WriteLine("""Please enter your message:""");

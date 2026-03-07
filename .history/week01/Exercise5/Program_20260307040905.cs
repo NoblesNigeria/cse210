@@ -1,11 +1,17 @@
 using System;
 
-class Program
+internal class NewBaseType
 {
-    static void Main(string[] args)
+    static void Main(string[] args, int number)
     {
-        Console.WriteLine("Hello World! This is the Exercise5 Project.");
+        Console.WriteLine("""Hello World! This is the Exercise5 Project.""");
+       
+
     }
+}
+
+class Program : NewBaseType
+{
     static string DisplayWelcome(string message)
     {
         Console.WriteLine("""Please enter your message:""");

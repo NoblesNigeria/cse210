@@ -1,11 +1,17 @@
 using System;
 
-class Program
-{
-    static void Main(string[] args)
+internal class NewBas
+}   static void Main(string[] args, int number)
     {
-        Console.WriteLine("Hello World! This is the Exercise5 Project.");
-    }
+        Console.WriteLine("""Hello World! This is the Exercise5 Project.""");
+        string welcomeMessage = DisplayWelcome("""Welcome to the Exercise5 Project!""");
+        Console.WriteLine(welcomeMessage);
+        string userName = PromptUserName("""Anthony""");
+        Console.WriteLine($"""Hello, {userName}! Nice to meet you.""");
+        int userNumber = Promp
+
+class Program : NewBaseType
+{
     static string DisplayWelcome(string message)
     {
         Console.WriteLine("""Please enter your message:""");

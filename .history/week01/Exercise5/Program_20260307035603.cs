@@ -1,11 +1,25 @@
 using System;
 
-class Program
-{
-    static void Main(string[] args)
+internal class NewBas
+}   static void Main(string[] args, int number)
     {
-        Console.WriteLine("Hello World! This is the Exercise5 Project.");
+        Console.WriteLine("""Hello World! This is the Exercise5 Project.""");
+        string welcomeMessage = DisplayWelcome("""Welcome to the Exercise5 Project!""");
+        Console.WriteLine(welcomeMessage);
+        string userName = PromptUserName("""Anthony""");
+        Console.WriteLine($"""Hello, {userName}! Nice to meet you.""");
+        int userNumber = PromptUserNumber(0);
+        Console.WriteLine($"""You entered the number: {userNumber}""");
+        int squaredNumber = SquareNumber(userNumber);
+        Console.WriteLine($"""The square of the number you entered is: {squaredNumber}""");
+        string finalResult = DisplayResult(userName, squaredNumber);
+        Console.WriteLine(finalResult);
+
     }
+}
+
+class Program : NewBaseType
+{
     static string DisplayWelcome(string message)
     {
         Console.WriteLine("""Please enter your message:""");

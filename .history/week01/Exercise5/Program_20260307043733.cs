@@ -39,8 +39,7 @@ class Program
     {
         return number * number;
     }
-    static string DisplayResult(string name, int squared)
+    static void DisplayResult(string name, int squared)
     {
-        return $"Congratulations {name}! The square of your number is {squared}.";
     }
 }

@@ -8,10 +8,10 @@ class Program
         string name = PromptUserName();
         int number = PromptUserNumber();
         int squared = SquareNumber(number);
-        string result = DisplayResult(name, squared);
+        string result 
+
         Console.WriteLine($"{message}, {name}");
         Console.WriteLine($"The square of your number is {squared}");
-        Console.WriteLine(result);
     }
 
     static string DisplayWelcome()
@@ -39,8 +39,9 @@ class Program
     {
         return number * number;
     }
-    static string DisplayResult(string name, int squared)
+    static void DisplayResult(string name, int squared)
     {
-        return $"Congratulations {name}! The square of your number is {squared}.";
+        Console.WriteLine($"{name}");
+        Console.WriteLine($"The square of your number is {squared}");
     }
 }
