@@ -1,0 +1,36 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World! This is the Exercise3 Project.");
+        Random randomNumber = random.Random();
+        int number = randomNumber.Next(1, 101);
+        Console.WriteLine("I'm thinking of a number between 1 and 100. Can you guess what it is?");
+        int guess = int.Parse(Console.ReadLine());
+        int attempts = 1;
+
+        while (guess != number && attempts < 5)
+        {
+            if (guess < number)
+            {
+                Console.WriteLine("Too low! Try again.");
+            }
+            else
+            {
+                Console.WriteLine("Too high! Try again.");
+            }
+            guess = int.Parse(Console.ReadLine());
+            attempts++;
+        }
+        if (guess == number && attempts <= 5)
+        {
+            Console.WriteLine($"Congratulations! You guessed the number, it took {attempts} attempts!");
+        }
+        if (attempts == 5 && guess != number)
+        {
+            Console.WriteLine($"Sorry, you've used all your attempts. The number was {number}.");
+        }
+    }
+}

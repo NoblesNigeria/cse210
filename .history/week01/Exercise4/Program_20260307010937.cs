@@ -18,12 +18,8 @@ class Program
             Console.WriteLine("The numbers you entered are: " + numbers);
         }
         int total = numbers.Sum();
-        double averageNumber = numbers.Average();
-        int maxNumber = numbers.Max();
-        int minNumber = numbers.Min();
+        int averageNumber = numbers.Average();
         Console.WriteLine("The average of the numbers you entered is: " + averageNumber);
         Console.WriteLine("The sum of the numbers you entered is: " + total);
-        Console.WriteLine("The maximum number you entered is: " + maxNumber);
-        Console.WriteLine("The minimum number you entered is: " + minNumber);
     }
 }
