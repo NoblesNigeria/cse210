@@ -10,7 +10,6 @@ class Program
         Job job1 = new Job();
         job1.Display();
         Resume resume1 = new Resume();
-        resume1.Display();
     }
 }
 
