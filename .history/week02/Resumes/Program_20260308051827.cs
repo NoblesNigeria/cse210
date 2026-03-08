@@ -10,6 +10,12 @@ class Program
         Job job1 = new Job();
         job1.Display();
     }
+    class Job()
+    {
+        public string _company;
+        public string _jobTitle;
+
+    }
+
+
 }
-
-

@@ -8,8 +8,12 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Resumes Project.");
         Job job1 = new Job();
+        job1._company = "Microsoft";
+        job1._jobTitle = "Software Engineer";
+
         job1.Display();
     }
 }
 
 
+}

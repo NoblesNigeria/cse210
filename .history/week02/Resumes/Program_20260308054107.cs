@@ -8,7 +8,7 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Resumes Project.");
         Job job1 = new Job();
-        job1.Display();
+        job1.Display(); 
     }
 }
 
