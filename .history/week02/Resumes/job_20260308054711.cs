@@ -9,7 +9,7 @@ public class Job
     public Job()
     {
         _company = "Microsoft";
-        _jobTitle = "Software Engineer";
+    _jobTitle = "Software Engineer";
         _startYear = 2020;
         _endYear = 2023;
     }

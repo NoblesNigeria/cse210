@@ -8,10 +8,10 @@ public class Job
     public int _endYear;
     public Job()
     {
-        _company = "Microsoft";
-        _jobTitle = "Software Engineer";
-        _startYear = 2020;
-        _endYear = 2023;
+        Job._company = "Microsoft";
+        Job._jobTitle = "Software Engineer";
+        Job._startYear = 2020;
+        Job._endYear = 2023;
     }
     public void Display()
     {
