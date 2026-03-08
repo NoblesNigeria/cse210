@@ -7,7 +7,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the Resumes Project.");
-        Job Job1 = new Job();
+       Job Job1 = new Job();
         Job1._company = "Microsoft";
         Job1._jobTitle = "Software Engineer";
 
@@ -15,10 +15,10 @@ class Program
         Console.WriteLine($"Job Title: {Job1._jobTitle}");
     }
     class Job
-    {
-        public string _company;
-        public string _jobTitle;
-    }
+{
+    public string _company;
+    public string _jobTitle;
+}
 
 
 }

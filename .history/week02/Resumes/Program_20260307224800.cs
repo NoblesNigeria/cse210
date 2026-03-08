@@ -7,18 +7,18 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the Resumes Project.");
-        Job Job1 = new Job();
-        Job1._company = "Microsoft";
-        Job1._jobTitle = "Software Engineer";
+        PublicKey job1 job1 = new job1();
+        Console.WriteLine($"I work at {job1._company} as a {job1._jobTitle}.");
 
-        Console.WriteLine($"Company: {Job1._company}");
-        Console.WriteLine($"Job Title: {Job1._jobTitle}");
     }
-    class Job
+    public class job1
     {
         public string _company;
         public string _jobTitle;
+        public job1()
+        {
+            _company = "Microsoft";
+            _jobTitle = "Software Engineer";
+        }
     }
-
-
 }

@@ -18,7 +18,7 @@ class Program
     {
         public string _company;
         public string _jobTitle;
-    }
+}
 
 
 }

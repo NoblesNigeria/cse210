@@ -15,10 +15,10 @@ class Program
         Console.WriteLine($"Job Title: {Job1._jobTitle}");
     }
     class Job
-    {
-        public string _company;
-        public string _jobTitle;
-    }
+{
+    public string _company;
+    public string _jobTitle;
+}
 
 
 }
