@@ -1,0 +1,20 @@
+class JournalEntry
+{
+    public string Prompt;
+    public string Response;
+    public string Date;
+    public List<string> _load;
+
+    public JournalEntry()
+    {
+        Prompt = "What was the best part of your day?";
+        Response = "";
+        Date = DateTime.Now.ToString("MM/dd/yyyy");
+        _load = new List<string>();
+    }
+    public void Display()
+    {
+        Load
+    }
+
+}
