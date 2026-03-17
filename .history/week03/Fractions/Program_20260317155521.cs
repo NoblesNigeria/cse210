@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Fractions Project.");
         mathProject mathProject1 = new mathProject();
-        mathProject1.Display();
+        mathProject1.D();
         Console.WriteLine($"{mathProject1}");
     }
 }

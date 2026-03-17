@@ -1,0 +1,5 @@
+Public class mathProject
+    {
+        console.WriteLine("Hello World! This is the Fractions Project.");
+
+    }
