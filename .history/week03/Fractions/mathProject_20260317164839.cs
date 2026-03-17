@@ -10,13 +10,12 @@ public class mathProject
             Console.WriteLine("Hello World! This is the Fractions Project.");
             _topNumber = int.Parse(Console.ReadLine());
             _bottomNumber = int.Parse(Console.ReadLine());
-            _wholeNumber = int.Parse(Console.ReadLine());
+            
         }
 
         public void Display()
         {
             Console.WriteLine($"The fraction is: {_topNumber}/{_bottomNumber}");
-            Console.WriteLine($"The whole number is: {_wholeNumber}");
 
         }
     }

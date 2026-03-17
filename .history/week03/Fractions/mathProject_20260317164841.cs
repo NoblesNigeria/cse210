@@ -16,7 +16,6 @@ public class mathProject
         public void Display()
         {
             Console.WriteLine($"The fraction is: {_topNumber}/{_bottomNumber}");
-            Console.WriteLine($"The whole number is: {_wholeNumber}");
 
         }
     }

@@ -4,19 +4,17 @@ public class mathProject
     {
         private int _topNumber;
         private int _bottomNumber;
-        private int _wholeNumber;
+        private int _whole
         public mathProject()
         {
             Console.WriteLine("Hello World! This is the Fractions Project.");
             _topNumber = int.Parse(Console.ReadLine());
             _bottomNumber = int.Parse(Console.ReadLine());
-            _wholeNumber = int.Parse(Console.ReadLine());
         }
 
         public void Display()
         {
             Console.WriteLine($"The fraction is: {_topNumber}/{_bottomNumber}");
-            Console.WriteLine($"The whole number is: {_wholeNumber}");
 
         }
     }
