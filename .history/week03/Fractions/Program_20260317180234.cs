@@ -9,8 +9,6 @@ class Program
         mathProject mathProject1 = new mathProject();
         mathProject1.Display();
         Console.WriteLine($"{mathProject1}");
-        Constructor constructor1 = new Constructor();
-        constructor1.Display();
-        Console.WriteLine($"{constructor1}");
+        
     }
 }

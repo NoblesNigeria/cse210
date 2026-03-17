@@ -14,7 +14,7 @@ public class mathProject
         public void Display()
         {
             Console.WriteLine($"The fraction is: {_topNumber}/{_bottomNumber}");
-
+ 
 
         }
     }
