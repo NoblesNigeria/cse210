@@ -5,9 +5,9 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
-        Reference reference = new Reference("Mathew", 7, 7, 8);
+        Reference reference = new Reference("Helaman", 14, 30, 31);
         Scripture scripture = new Scripture(reference,
-            "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you: For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.");
+            "And now remember remember my brethren, that whosoever perisheth, perisheth unto  .");
 
         while (true)
         {
