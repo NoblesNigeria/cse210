@@ -7,7 +7,7 @@ class Program
         Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
         Reference reference = new Reference("Mathew", 7, 7, 8);
         Scripture scripture = new Scripture(reference,
-            "Ask, and it shall be given you; seek, and\nye shall find; knock, and it shall be opened unto you: For every one that\nasketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.");
+            "Ask, and it shall be given you; seek, and\ye shall find; knock, and it shall be opened unto you: For every one that\nasketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.");
 
         while (true)
         {
