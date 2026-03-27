@@ -1,0 +1,27 @@
+public class Video
+{
+    private string _title;
+    private string _author;
+    private int _lengthInSeconds;
+    private List<vi;
+    public Video()
+    {
+        _title = "The Great Apostacy";
+        _author = "Jeffrey R. Holland";
+        _lengthInSeconds = 3600;
+    }
+    public void AddVideo()
+    {
+        _videos = new List<Video>();
+        _videos.Add(_title);
+        _videos.Add(_author);
+        _videos.Add(_lengthInSeconds);
+    }
+    public void DisplayVideo()
+    {
+        Console.WriteLine($"Title: {_title}");
+        Console.WriteLine($"Author: {_author}");
+        Console.WriteLine($"Length: {_lengthInSeconds} seconds");
+    }
+
+}

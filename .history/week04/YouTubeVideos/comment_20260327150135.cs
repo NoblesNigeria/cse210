@@ -1,0 +1,43 @@
+public class Comment
+{
+    private string _commenter;
+    private string _commentText;
+    private int _commentCount;
+    private List<Comment> _commentsTracker;
+
+    public Comment()
+    {
+        _commenter = "Anthony";
+        _commentText = "This movie is amazing! I love the message it conveys about faith and perseverance.";
+        _commentCount = =;
+        _commenter = "Emily";
+        _commentText = "I found this video to be very inspiring. It really made me reflect on my own beliefs and values.";
+        _commentCount = +1;
+        _commenter = "Michael";
+        _commentText = "The cinematography in this video is stunning. It really captures the beauty of nature and the power of faith.";
+        _commentCount = +1;
+
+    }
+     public List<Comment> AddComment(string commenter, string commentText, int commentCount)
+    {
+        if (_commentsTracker == null)
+        {
+            _commentsTracker = new List<Comment>();
+        }
+        _commentsTracker.Add(new Comment());
+
+        return _commentsTracker;
+
+    }
+
+    public void DisplayComment()
+    {
+        Console.WriteLine("Comment added to tracker.");
+        Console.WriteLine(_commentsTracker);
+        Console.WriteLine($"Commenter: {_commenter}");
+        Console.WriteLine($"Comment: {_commentText}");
+        Console.WriteLine($"Comment Count: {_commentCount}");
+        Console.WriteLine("Comment added to tracker.");
+        Console.WriteLine(AddComment(_commenter, _commentText, _commentCount));
+    }
+}

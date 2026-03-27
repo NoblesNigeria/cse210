@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+
+public class Video
+{
+    private string Title;
+    private string Author
+    public int Length { get; set; } // in seconds
+
+    private List<Comment> _comments = new List<Comment>();
+
+    public Video(string title, string author, int length)
+    {
+        Title = title;
+        Author = author;
+        Length = length;
+    }
+
+    public void AddComment(string commenter, string text)
+    {
+        _comments.Add(new Comment(commenter, text));
+    }
+
+    public int GetCommentCount()
+    {
+        return _comments.Count;
+    }
+
+    public void DisplayVideoInfo()
+    {
+        Console.WriteLine($"Title: {Title}");
+        Console.WriteLine($"Author: {Author}");
+        Console.WriteLine($"Length: {Length} seconds");
+        Console.WriteLine($"Comment Count: {GetCommentCount()}");
+        Console.WriteLine("Comments:");
+
+        foreach (var comment in _comments)
+        {
+            Console.WriteLine($"- {comment.Commenter}: {comment.Text}");
+        }
+
+        Console.WriteLine();
+    }
+}
