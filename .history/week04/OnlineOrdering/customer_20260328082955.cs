@@ -1,0 +1,16 @@
+public class Customer
+{
+    private string _name;
+    public Address Address;
+
+    public Customer(string name, Address address)
+    {
+        _ame = name;
+        Address = address;
+    }
+
+    public bool LivesInUSA()
+    {
+        return Address.IsUSA();
+    }
+}
