@@ -14,7 +14,7 @@ class Program
         mathAssignment.DisplayHomeworkList();
         WritingAssignment writingAssignment = new WritingAssignment();
         writingAssignment.setWritingInformation("The Great Gatsby");
-        writingAssignment.DisplaySummary();
+        
         writingAssignment.DisplayWritingInformation();
     }
 }
