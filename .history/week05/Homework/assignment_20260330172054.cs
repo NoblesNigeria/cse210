@@ -9,8 +9,9 @@ public class Assignment
     }
     public string GetSummary()
     {
-        return $"{_studentName}, {_title}";
-    }
+        return $"{_studentName} - {_title}";
+
+}
     public void DisplaySummary()
     {
         Console.WriteLine(GetSummary());

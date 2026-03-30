@@ -8,7 +8,8 @@ class Program
         Assignment assignment = new Assignment("Anthony", "surds");
         Console.WriteLine(assignment.GetSummary());
 
-        MathAssignment mathAssignment = new MathAssignment("Section: 7.3", "Problems: 8-19", "Anthony", "Surds");
+        MathAssignment mathAssignment = new MathAssignment("Section 7.3", "Problems 8-19 odd", "Anthony", "Surds");
+        Console.WriteLine(mathAssignment.GetSummary());
         Console.WriteLine(mathAssignment.GetHomeworkList());
 
         WritingAssignment writingAssignment = new WritingAssignment("Nwose", "Essay writing", "The Great Gatsby");

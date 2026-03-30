@@ -2,14 +2,14 @@ public class Assignment
 {
     private string _title;
     private string _studentName;
-    public Assignment(string studentName, string title)
-    {
-        _studentName = studentName;
-        _title = title;
-    }
     public string GetSummary()
     {
-        return $"{_studentName}, {_title}";
+        return $"{_studentName} - {_title}";
+    }
+    public Assignment(string title, string studentName)
+    {
+        _title = title;
+        _studentName = studentName;
     }
     public void DisplaySummary()
     {

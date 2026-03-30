@@ -7,7 +7,7 @@ public class WritingAssignment:Assignment
     }
     public string GetWritingInformation()
     {
-        return $"{base.GetSummary()}, {_topic}";
+        return $"{base.GetSummary()} {_topic}";
     }
     public void DisplayWritingInformation()
     {

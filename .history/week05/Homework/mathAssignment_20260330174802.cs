@@ -10,7 +10,7 @@ public class MathAssignment:Assignment
     }
     public string GetHomeworkList()
     {
-        return $"{base.GetSummary()}, {_textbookSection}, {_problems}";
+        return $"({_textbookSection}, {_problems}, {base.GetSummary()}, \"Math Homework\")";
     }
     public void DisplayHomeworkList()
     {
