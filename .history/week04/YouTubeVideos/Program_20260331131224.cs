@@ -18,10 +18,7 @@ class Program
         video2.AddComment("Alice", "This made OOP easy!");
         video2.AddComment("Bob", "Nice explanation.");
 
-        video3.AddComment("Charlie", "Excellent content!");
-        video3.AddComment("Diana", "Thanks for the clear explanation.");
-
-        List<Video> videos = new List<Video> { video1, video2, video3 };
+        List<Video> videos = new List<Video> { video1, video2 };
 
         foreach (var video in videos)
         {
