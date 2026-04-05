@@ -8,10 +8,5 @@ class Program
         List<Shape> shapes = new List<Shape>();
         shapes.Add(new Circle(5));
         shapes.Add(new Rectangle(4, 6));
-        shapes.Add(new Square(4));
-        foreach (Shape shape in shapes)
-        {
-            Console.WriteLine($"Shape: {shape.GetType().Name}, Area: {shape.GetArea()}, Color: {shape.GetColor()}");
-        }
     }
 }
