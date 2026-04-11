@@ -28,6 +28,7 @@ class Program
                 else if (choice == "2")
                 {
                     manager.DisplayGoals();
+                    break;
                 }
 
                 else if (choice == "3")
@@ -36,6 +37,7 @@ class Program
                     Console.Write("Select goal: ");
                     int index = int.Parse(Console.ReadLine()) - 1;
                     manager.RecordEvent(index);
+                    break;
                 }
 
                 else if (choice == "4")
@@ -51,6 +53,7 @@ class Program
                 else if (choice == "6")
                 {
                     manager.ShowScore();
+                    break;
                 }
 
                 else if (choice == "0")
@@ -77,18 +80,17 @@ class Program
         Console.Write("Points: ");
         int points = int.Parse(Console.ReadLine());
 
-            if (type == "1")
-            {
+        switch (type)
+        {
+            case "1":
                 manager.AddGoal(new SimpleGoal(name, desc, points));
-            }
+                break;
 
-             else if (type == "2")
-             {
+            case "2":
                 manager.AddGoal(new EternalGoal(name, desc, points));
-             }
+                break;
 
-             else if (type == "3")
-             {
+            case "3":
                 Console.Write("Target count: ");
                 int target = int.Parse(Console.ReadLine());
 
@@ -96,23 +98,8 @@ class Program
                 int bonus = int.Parse(Console.ReadLine());
 
                 manager.AddGoal(new ChecklistGoal(name, desc, points, target, bonus));
-             }
-
-            if (type == "1")
-            {
-                manager.AddGoal(new EternalGoal(name, desc, points));
-            }
-
-            else if (type == "3")
-            {
-                Console.Write("Target count: ");
-                int target = int.Parse(Console.ReadLine());
-
-                Console.Write("Bonus: ");
-                int bonus = int.Parse(Console.ReadLine());
-
-                manager.AddGoal(new ChecklistGoal(name, desc, points, target, bonus));
-            }
+                break;
+        }
 
     }
 

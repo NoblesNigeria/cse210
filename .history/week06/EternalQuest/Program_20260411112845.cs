@@ -77,18 +77,15 @@ class Program
         Console.Write("Points: ");
         int points = int.Parse(Console.ReadLine());
 
-            if (type == "1")
-            {
+            case "1":
                 manager.AddGoal(new SimpleGoal(name, desc, points));
-            }
+                break;
 
-             else if (type == "2")
-             {
+            case "2":
                 manager.AddGoal(new EternalGoal(name, desc, points));
-             }
+                break;
 
-             else if (type == "3")
-             {
+            case "3":
                 Console.Write("Target count: ");
                 int target = int.Parse(Console.ReadLine());
 
@@ -96,23 +93,8 @@ class Program
                 int bonus = int.Parse(Console.ReadLine());
 
                 manager.AddGoal(new ChecklistGoal(name, desc, points, target, bonus));
-             }
-
-            if (type == "1")
-            {
-                manager.AddGoal(new EternalGoal(name, desc, points));
-            }
-
-            else if (type == "3")
-            {
-                Console.Write("Target count: ");
-                int target = int.Parse(Console.ReadLine());
-
-                Console.Write("Bonus: ");
-                int bonus = int.Parse(Console.ReadLine());
-
-                manager.AddGoal(new ChecklistGoal(name, desc, points, target, bonus));
-            }
+                break;
+        }
 
     }
 

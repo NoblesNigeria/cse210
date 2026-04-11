@@ -98,13 +98,14 @@ class Program
                 manager.AddGoal(new ChecklistGoal(name, desc, points, target, bonus));
              }
 
+       
+        
             if (type == "1")
             {
                 manager.AddGoal(new EternalGoal(name, desc, points));
             }
 
-            else if (type == "3")
-            {
+            e
                 Console.Write("Target count: ");
                 int target = int.Parse(Console.ReadLine());
 
@@ -112,7 +113,8 @@ class Program
                 int bonus = int.Parse(Console.ReadLine());
 
                 manager.AddGoal(new ChecklistGoal(name, desc, points, target, bonus));
-            }
+                break;
+        
 
     }
 

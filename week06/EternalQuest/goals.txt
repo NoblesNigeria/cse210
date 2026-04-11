@@ -1,0 +1,3 @@
+0
+SimpleGoal|sacrament|attendance|5|False
+EternalGoal|sacrament|attendance|5|0

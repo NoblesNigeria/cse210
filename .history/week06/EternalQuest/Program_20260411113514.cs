@@ -98,6 +98,8 @@ class Program
                 manager.AddGoal(new ChecklistGoal(name, desc, points, target, bonus));
              }
 
+       
+        
             if (type == "1")
             {
                 manager.AddGoal(new EternalGoal(name, desc, points));
@@ -113,6 +115,7 @@ class Program
 
                 manager.AddGoal(new ChecklistGoal(name, desc, points, target, bonus));
             }
+        
 
     }
 
