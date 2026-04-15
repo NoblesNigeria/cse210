@@ -19,6 +19,7 @@ class Program
         foreach (Sport sport in sports)
         {
             sport.GetSummary();
+            
         }
 
     }

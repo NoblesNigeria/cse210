@@ -10,16 +10,11 @@ class Program
         run1.GetSummary();
         Swimming swim1 = new Swimming("Evening Swim", 20260601, 45, 1.0, 30);
         swim1.GetSummary();
-        Cycling cycle1 = new Cycling("Afternoon Cycle", 20260601, 60, 20.0, 20);
+        Cycling cycle1 = new Cycling("Afternoon Cycle", 20260601, 60, 20.0,);
         cycle1.GetSummary();
-        List<Sport> sports = new List<Sport>();
-        sports.Add(run1);
-        sports.Add(swim1);
-        sports.Add(cycle1);
-        foreach (Sport sport in sports)
-        {
-            sport.GetSummary();
-        }
+        Console.WriteLine($"{run1}");
+        Console.WriteLine($"{swim1}");
+        Console.WriteLine($"{cycle1}");
 
     }
 }

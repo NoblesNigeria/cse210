@@ -12,6 +12,7 @@ class Program
         swim1.GetSummary();
         Cycling cycle1 = new Cycling("Afternoon Cycle", 20260601, 60, 20.0, 20);
         cycle1.GetSummary();
+        
         List<Sport> sports = new List<Sport>();
         sports.Add(run1);
         sports.Add(swim1);
